@@ -22,6 +22,8 @@ int main()
             // }
             // cout << noOfmoves << endl;
             // getting TLE while using above code at Test Case 3
+            // in all other case noOfmove==b-(a%b)
+            cout << b - (a % b) << endl;
         }
     }
 
