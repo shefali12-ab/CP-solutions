@@ -5,19 +5,27 @@ int main()
 {
     int x, i;
     cin >> x;
-    string str = {2, 3, 4, 5, 1};
+    // string str = {2, 3, 4, 5, 1};
 
-    for (i = 0; i < str.length(); i++)
+    // for (i = 0; i < str.length(); i++)
+    // {
+    //     if (x % str[i] == 0)
+    //     {
+    //         cout << x / str[i] << endl;
+    //         break;
+    //     }
+    // }
+    // if (i != str.length())
+    // {
+    //     cout << floor(x / 5) + 1;
+    // }
+    if (x == 1 || x == 2 || x == 3 || x == 4 || x == 5)
     {
-        if (x % str[i] == 0)
-        {
-            cout << x / str[i] << endl;
-            break;
-        }
+        cout << "1";
     }
-    if (i != str.length())
+    else
     {
-        cout << floor(x / 5) + 1;
+        x % 5
     }
 
     return 0;

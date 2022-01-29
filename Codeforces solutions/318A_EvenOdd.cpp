@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int n, k;
+    long long n, k;
     cin >> n >> k;
     // int arr[n];
 
@@ -24,11 +24,11 @@ int main()
         // }
         if (k <= n / 2)
         {
-            cout << (2 * k - 1);
+            cout << (long long)(2 * k - 1);
         }
         else
         {
-            int x = k - n / 2;
+            long long x = k - n / 2;
             cout << 2 * x;
         }
     }
@@ -49,11 +49,11 @@ int main()
         // }
         if (k <= n / 2 + 1)
         {
-            cout << (2 * k - 1);
+            cout << (long long)(2 * k - 1);
         }
         else
         {
-            int x = k - ((n / 2) + 1);
+            long long x = k - ((n / 2) + 1);
             cout << 2 * x;
         }
     }
