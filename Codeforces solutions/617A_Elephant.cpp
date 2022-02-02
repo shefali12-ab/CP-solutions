@@ -3,30 +3,15 @@
 using namespace std;
 int main()
 {
-    int x, i;
+    int x, ans = 0;
     cin >> x;
-    // string str = {2, 3, 4, 5, 1};
-
-    // for (i = 0; i < str.length(); i++)
-    // {
-    //     if (x % str[i] == 0)
-    //     {
-    //         cout << x / str[i] << endl;
-    //         break;
-    //     }
-    // }
-    // if (i != str.length())
-    // {
-    //     cout << floor(x / 5) + 1;
-    // }
-    if (x == 1 || x == 2 || x == 3 || x == 4 || x == 5)
+    int arr[5] = {1, 2, 3, 4, 5};
+    for (int i = 4; i >= 0; i--)
     {
-        cout << "1";
+        ans = ans + x / arr[i];
+        x = x % arr[i];
     }
-    else
-    {
-        x % 5
-    }
+    cout << ans;
 
     return 0;
 }
