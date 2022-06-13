@@ -23,7 +23,6 @@ int main()
             v1.push_back(v[i]);
     }
     // here since it is vector so we don't need to take care of assigning zero at end after inserting non zero element
-
     // in case of array we need to tke care of it, or we can also do it by initializing all elements of array as zero
       for (int i = cnt; i <= N; i++)
     {
