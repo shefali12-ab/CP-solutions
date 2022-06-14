@@ -21,9 +21,11 @@ void solve(vector<string> ip, vector<string> op)
     return;
 }
 int main()
-{
-    vector<string> ip;
-    for(int i=0;i<ip.size();i++)
+{   
+    int N;
+    cin>>N;
+    vector<string> ip[N];
+    for(int i=0;i<N;i++)
     {
         cin>>ip[i];
 
