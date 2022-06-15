@@ -1,4 +1,4 @@
-#include <iostream>
+#include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
 void solve(vector<string> ip, vector<string> op)
@@ -7,7 +7,7 @@ void solve(vector<string> ip, vector<string> op)
     {
         for(int i=0;i<op.size();i++)
         {
-         cout<<op[i];
+         cout<<op[i]<<" ";
 
         }
         return;
@@ -22,14 +22,19 @@ void solve(vector<string> ip, vector<string> op)
 }
 int main()
 {   
-    int N;
-    cin>>N;
-    vector<string> ip[N];
-    for(int i=0;i<N;i++)
-    {
-        cin>>ip[i];
+    // int N;
+    // cin>>N;
+    vector<string> ip;
+    // for(int i=0;i<N;i++)
+    // {
+    //     char x;
+    //     cin>>x;
+    //     ip.push_back(x);
 
-    }
+    // }
+    string temp;
+    cin>>temp;
+    ip.push_back(temp);
     vector<string> op;
     solve(op, ip);
     return 0;

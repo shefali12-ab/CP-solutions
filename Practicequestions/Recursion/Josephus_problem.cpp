@@ -1,33 +1,52 @@
-#include<iostream>
+
 #include<bits/stdc++.h>
-#include<vector>
+
 using namespace std;
-void solve( vector<int> v,int k,int start)
+int solve( vector<int> &v,int k,int start,int &ans)
 {
     if(v.size()==1) 
     {
-    cout<<v[0];
-    return;
+    ans=v[0];
+    return ans;
     }
-    start=(start+k)%(v.size()); //here we have done % v.size() because it will be case that start will go out of vector size which will give segmentation fault
-    v.erase(v.begin()+k);
+    // v.erase(v.begin()+k);
+    // start=start+k; //here we have done % v.size() because it will be case that start will go out of vector size which will give segmentation fault
+    // k=start+k;
+    // if(start>v.size())
+    // {
+    //      start=(start)%(v.size()); 
+         
+    // }
+    // if(k>v.size())
+    //      {
+    //         k=k%(v.size());
+    //      }
+    start=(start+k)%(v.size());
+    v.erase(v.begin()+start);
     
-   solve(v,k,start);
+    
+   solve(v,k,start,ans);
+   return 0;
 
 }
 int main()
 {
    int N,k;
-   cin >> N >> k;
+   cin >> N ;
    vector<int> v;
    //v.size()=N;
    for(int i=0;i<N;i++)
    {
-    cin>>v[i];
+    int x;
+    cin>>x;
+    v.push_back(x);
+
    }
-   k=k-1;
-   solve(v,k,0);
-
-
-    return 0;
+   cin>>k;
+   int ans=-1;
+   int x=solve(v,k,0,ans);
+   cout<<x;
+   return 0;
+   
+   
 }
