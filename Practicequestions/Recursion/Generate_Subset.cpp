@@ -1,7 +1,7 @@
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
-void solve(vector<string> ip, vector<string> op)
+void solve(vector<char> ip, vector<char> op)
 {
     if (ip.size()==0)
     {
@@ -12,8 +12,8 @@ void solve(vector<string> ip, vector<string> op)
         }
         return;
     }
-    vector<string> op1 = op;
-    vector<string> op2;
+    vector<char> op1 = op;
+    vector<char> op2;
     op2.push_back(ip[0]);
     ip.erase(ip.begin()+0);
     solve(ip, op1);
@@ -22,9 +22,9 @@ void solve(vector<string> ip, vector<string> op)
 }
 int main()
 {   
-    // int N;
-    // cin>>N;
-    vector<string> ip;
+    int N;
+    cin>>N;
+    vector<char> ip;
     // for(int i=0;i<N;i++)
     // {
     //     char x;
@@ -32,10 +32,13 @@ int main()
     //     ip.push_back(x);
 
     // }
-    string temp;
+    for(int i=0;i<N;i++){
+    char temp;
     cin>>temp;
     ip.push_back(temp);
-    vector<string> op;
+    
+    }
+    vector<char> op;
     solve(op, ip);
     return 0;
 }
