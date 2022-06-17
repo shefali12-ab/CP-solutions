@@ -1,5 +1,12 @@
 //Given a sorted array and a number X we need to find the Index of last occurence of X in the sorted array. So our sorted array might contains duplicates we need to find the
 //index of first occurence of number, and if given element is not present we need to return -1.
+/* Naive solution 
+Time complexity: O(N) Auxilary space: O(1)
+traversing from right side of array as soon as you find the element return its index.
+second soln 
+recursive binary search : T.C: O(log N), AS: O(Log N)
+iterative binary serach : T.C: O(log N), AS: O(1)
+*/
 #include<bits/stdc++.h>
 using namespace std;
 int main()

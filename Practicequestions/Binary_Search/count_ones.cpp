@@ -43,13 +43,13 @@ int main()
     no of ones = 5-2=3
     time complexity= O(log N) in worst case
     */
-   // Efficient solution using Binary search O(log N)
+   // Efficient solution using Binary search below takes Big O(log N) time complexity and O(1) auxilary space.
    int low=0;
    int high=N-1;
    while(low<high)
    {
     int mid=(low+high)/2;
-    if(v[mid]<1)
+    if(v[mid]==0)
     {
        low=mid+1; 
     }
@@ -64,6 +64,7 @@ int main()
         // we have find the first occurence
         // no of ones=size-mid
         cout<<(N-mid);
+        return 0;
     }
     else{
         high=mid-1;
