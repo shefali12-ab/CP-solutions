@@ -45,11 +45,10 @@ int main()
     else{
         // here mid*mid==n
         ans=mid;
-        cout<<mid;
-        return 0;
+        
         
     }
   }
   cout<<ans;
-  return;
+  return 0;
 }
