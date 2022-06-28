@@ -67,18 +67,19 @@ than the range(size of arry) after this we have printed some of element in sorte
 using namespace std;
 int main()
 {
-    int size1,size2;
-    cin>>size1>>size2;
-    vector<int> v1{size1},v2{size2};
-    for(int i=0;i<size1;i++)
-    {
-        cin>>v1[i];
-    }
-     for(int i=0;i<size2;i++)
-    {
-        cin>>v2[i];
-    }
-   
+    // int size1,size2;
+    // cin>>size1>>size2;
+    // vector<int> v1{size1},v2{size2};
+    // for(int i=0;i<size1;i++)
+    // {
+    //     cin>>v1[i];
+    // }
+    //  for(int i=0;i<size2;i++)
+    // {
+    //     cin>>v2[i];
+    // }
+   vector<int> v1={1,2,3,7,8};
+   vector<int> v2={4,5,6};
    int index1=0;
    int index2=0;
    //int length =v1.size()<v2.size()? v1.size() :v2.size();
